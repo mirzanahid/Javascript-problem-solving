@@ -18,8 +18,6 @@ function trianglePattern(num) {
 
 trianglePattern(5);
 
-
-
 // Task-2:  Inverted Right-Angled Triangle
 
 // *****
@@ -28,22 +26,18 @@ trianglePattern(5);
 // **
 // *
 
-
-function invertedPattern(n){
-    let result = ""
-    for (let i=n; i>=1; i--){
-        const star = "*"
-            result += star.repeat(i) + "\n"
-    }
-    return result
+function invertedPattern(n) {
+  let result = "";
+  for (let i = n; i >= 1; i--) {
+    const star = "*";
+    result += star.repeat(i) + "\n";
+  }
+  return result;
 }
 
-console.log(invertedPattern(5))
+console.log(invertedPattern(5));
 
-
-//Task-3: Pyramid Pattern 
-
-
+//Task-3: Pyramid Pattern
 
 
 
@@ -53,8 +47,7 @@ console.log(invertedPattern(5))
 
 
 
-
-//Task- : Write a program in JavaScript to print the following pattern for a given number n (rows):
+//Task-4 : Write a program in JavaScript to print the following pattern for a given number n (rows):
 
 // 1
 // 22
