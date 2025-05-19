@@ -50,3 +50,26 @@ function flattenArray(arr){
           },delay)
      }
  }
+
+
+ //problem-6: Clone an object deeply.
+
+//  function 
+
+
+//problem-7: Check if Two Arrays Are Equal
+
+function arraysEqual(a,b){
+ return a.length === b.length && a.every((v,i)=>v===b[i])
+}
+
+// console.log( arraysEqual([1,2,3], [1,2,3]))
+
+//problem-8: Remove Duplicates from Array
+
+function removeDuplicate(arr){
+     return [...new Set(arr)]
+}
+
+
+// console.log(removeDuplicate([1,1,2,2,3,4,5]))
