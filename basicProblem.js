@@ -9,14 +9,24 @@ function findMax(arr) {
 
 function countVowels(str) {
   let vowels = "aeiouAEIOU";
-  let count =0
+  let count = 0;
   for (let char of str) {
     if (vowels.includes(char)) {
-        count++
+      count++;
     }
   }
-  return count
+  return count;
 }
 // console.log(countVowels('xyz'))
 
+//problem-3: checking array equality
 
+function isArrayEqual(a, b) {
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) return false;
+  }
+  return true;
+}
+
+console.log(isArrayEqual([1, 2, 3], [1, 2, 3,4]));

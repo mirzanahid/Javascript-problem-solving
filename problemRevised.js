@@ -27,21 +27,35 @@ function firstUniqueCharacter(str) {
 
 //problem-4: Flatten a Nested Array
 
-function flattenNestedArray(arr){
-    return arr.flat(Infinity)
+function flattenNestedArray(arr) {
+  return arr.flat(Infinity);
 }
 // console.log(flattenNestedArray([1, [2, [3, 4]], 5]))
 
 //problem-5: Debounce Function
 
-function debounce(fn, delay=300){
-          let timerId 
-    return function(...args){
-        clearTimeout( timerId)
-        timerId = setTimeout(()=>{
-            fn.apply(this,args)
-        }, delay)
-    }
+function debounce(fn, delay = 300) {
+  let timerId;
+  return function (...args) {
+    clearTimeout(timerId);
+    timerId = setTimeout(() => {
+      fn.apply(this, args);
+    }, delay);
+  };
 }
+
+// replaced array element
+
+function replacedArrayElement(inputArray, elementToReplace, substractionElem) {
+  let found = false
+  inputArray.forEach((element, index) => {
+    if (element === elementToReplace) {
+      inputArray[index] = substractionElem;
+      found = true
+    } 
+  });
+  return found? inputArray : "Element not found to replace" ;
+}
+// console.log(replacedArrayElement([1, 2, 3, 4, 4, 4, 4], 4, 99));
 
 

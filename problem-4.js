@@ -19,4 +19,4 @@ function almostincreasingSequence(sequence) {
 }
 
 const sequence = [1,2,3,5,6,9]
-console.log(almostincreasingSequence(sequence))
+// console.log(almostincreasingSequence(sequence))
